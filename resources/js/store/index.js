@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import search from './modules/search'
+import pipe from './modules/pipe'
 
 Vue.use(Vuex)
 
-export default new Vuex.store({
+export default new Vuex.Store({
     modules: {
-        search
+        pipe
     }
 })

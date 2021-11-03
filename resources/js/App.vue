@@ -1,21 +1,21 @@
 <template>
-    <div class="app">
-        <form action="/" method='get'>
-            <dropdown />
-        </form>
-    </div>
+  <div class="app">
+    <form action="/" method="get">
+      <dropdownList />
+      <buttons-option />
+    </form>
+  </div>
 </template>
 
 <script>
-import Dropdown from './components/dropdown.vue'
+import dropdownList from "./components/dropdownList.vue"
+import buttonsOption from "./components/buttonsOption.vue";
+
 export default {
-    name: 'app',
-    components: {
-        Dropdown
-    }
-}
+  name: "app",
+  components: {
+    dropdownList,
+    buttonsOption,
+  },
+};
 </script>
-
-<style>
-
-</style>
