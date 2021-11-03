@@ -11,8 +11,8 @@ import Vuex from 'vuex'
 import store from './store'
 window.Vue = require('vue').default;
 //window.Vuex = require('vuex').default;
-
 Vue.use(Vuex);
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

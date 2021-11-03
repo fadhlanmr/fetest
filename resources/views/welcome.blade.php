@@ -20,7 +20,6 @@
         </style>
     </head>
     <body >
-        <a href="{{ url('/home') }}">Home</a>
         <div id="app">
             <App></App>
         </div>
