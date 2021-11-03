@@ -20,8 +20,9 @@
         </style>
     </head>
     <body >
+        <a href="{{ url('/home') }}">Home</a>
         <div id="app">
-            <searchbar></searchbar>
+            <App></App>
         </div>
         <script src="js/app.js"></script>
     </body>
