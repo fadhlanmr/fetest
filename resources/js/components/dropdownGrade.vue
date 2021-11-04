@@ -1,0 +1,29 @@
+<template>
+    <div class="dropdownGrade">
+        <div class="col-auto" v-for="pipes in pipe" :key="pipes.id">
+            <li><a class="dropdown-item" href="#">
+                {{ pipes.grade }}
+            </a></li>
+        </div>
+    </div>
+</template>
+
+<script>
+    import {
+        mapState
+    } from 'vuex';
+    export default {
+        name: "dropdownGrade",
+        mounted() {
+            //console.log(this.$store.dispatch('search/loadPipe'));
+            this.$store.dispatch('pipe/loadPipe');
+        },
+        computed: {
+            ...mapState("pipe", ["pipe"])
+        }
+    }
+</script>
+
+<style lang="css" scoped>
+    @import "../../css/app.css";
+</style>

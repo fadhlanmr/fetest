@@ -25,7 +25,7 @@
                     All
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <dropdowmMenu />
+                <dropdowmGrade />
             </ul>
             </div>
         </div>
@@ -39,7 +39,7 @@
                     All
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <dropdowmMenu />
+                <dropdowmSize />
             </ul>
             </div>
         </div>
@@ -53,7 +53,7 @@
                     All
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <dropdowmMenu />
+                <dropdowmConnection />
             </ul>
             </div>
         </div>
@@ -63,10 +63,16 @@
 
 <script>
     import dropdowmMenu from './dropdownMenu.vue';
+    import dropdowmSize from './dropdownSize.vue';
+    import dropdowmGrade from './dropdownGrade.vue';
+    import dropdowmConnection from './dropdownConnection.vue';
     export default {
         name: "dropdownList",
         components: {
-            dropdowmMenu
+            dropdowmMenu,
+            dropdowmSize,
+            dropdowmGrade,
+            dropdowmConnection
         },
     }
 </script>
